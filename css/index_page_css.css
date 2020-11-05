@@ -1,0 +1,80 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*background-color: #f6f6f6;*/
+    font-family: 'helvetica', 'sans-serif', 'Arial';
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-div-child1{
+    width: 14.5%;
+    height: 100vh;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-flow: column;
+    box-shadow: 1px 1px 5px black;
+    transition: all 0.3s ease; 
+}
+.main-div-child1-child2{
+    overflow-y: scroll;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: indigo;
+}
+
+.main-div-child1-child2 > div{
+    width: 100%;
+    padding: 0 3%;
+    flex-grow: 1;
+    padding: auto;
+    display: flex;
+    align-items: center;
+}
+.main-div-child1-child2 > div:hover{
+    background-color: rgb(81, 119, 243);
+}
+
+.main-div-child2{
+    width: 85%;
+    height: 100vh;
+    background-color: #e6e6e6;
+    overflow-y: scroll;
+}
+
+.main-div-child1-child2::-webkit-scrollbar{
+    display: none;
+}
+
+.hamburger-button{
+    z-index: 9999999;
+    display: none;
+}
+
+@media(max-width: 760px){
+    .main-div-child1{
+        width: 50%;
+        position: absolute;
+        left: -50%;
+        z-index: 99999;
+        background-color: white;
+    }
+    .main-div-child2{
+        width: 100%;
+    }
+    .hamburger-button{
+        display: block;
+    }
+}
