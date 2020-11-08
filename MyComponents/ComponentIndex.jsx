@@ -5,6 +5,8 @@ import HomePage from './HomePage';
 import CompA from './CompA';
 import CompB from './CompB';
 import CompC from './CompC';
+import CompD from './CompD';
+import CompE from './CompE';
 import logo from '../images/logo.png'
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
@@ -25,24 +27,21 @@ const ComponentIndex = () => {
                     </div>
 
                     <div className="main-div-child1-child2">
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <LibraryAddTwoToneIcon fontSize="large" /> &nbsp; Admissions </NavLink></div>
-                        <div> <NavLink to="/comp2" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Academics </NavLink></div>
-                        <div> <NavLink to="/comp3" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <GolfCourseTwoToneIcon fontSize="large" /> &nbsp;  Course offered </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Placements </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Research </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Campus Life </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Disciplines </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Alumni </NavLink></div>
-                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem', color: 'white' }}>  <InfoTwoToneIcon fontSize="large" /> &nbsp;  About Us </NavLink></div>
-
+                        <div> <NavLink to="/landing-page" style={{ textDecoration: 'none', fontSize: '1.6rem' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  HomePage </NavLink></div>
+                        <div> <NavLink to="/comp1" style={{ textDecoration: 'none', fontSize: '1.6rem' }}>  <LibraryAddTwoToneIcon fontSize="large" /> &nbsp; Admissions </NavLink></div>
+                        <div> <NavLink to="/comp3" style={{ textDecoration: 'none', fontSize: '1.6rem' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Academics </NavLink></div>
+                        <div> <NavLink to="/comp4" style={{ textDecoration: 'none', fontSize: '1.6rem' }}>  <SchoolTwoToneIcon fontSize="large" /> &nbsp;  Placements </NavLink></div>
+                        <div> <NavLink to="/comp5" style={{ textDecoration: 'none', fontSize: '1.6rem' }}>  <InfoTwoToneIcon fontSize="large" /> &nbsp;  Contact Us </NavLink></div>
                     </div>
                 </div>
                 <div className="main-div-child2">
                     <Switch>
-                        <Route exact path="/" component={HomePage} />
+                        <Route exact path="/landing-page" component={HomePage} />
                         <Route exact path="/comp1" component={CompA} />
                         <Route exact path="/comp2" component={CompB} />
                         <Route exact path="/comp3" component={CompC} />
+                        <Route exact path="/comp4" component={CompD} />
+                        <Route exact path="/comp5" component={CompE} />
                     </Switch>
                 </div>
             </div>

@@ -27,24 +27,23 @@ body{
 }
 .main-div-child1-child2{
     overflow-y: scroll;
-    flex-grow: 1;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-    background-color: indigo;
+    padding: 1.5rem 0;
+    
 }
 
 .main-div-child1-child2 > div{
     width: 100%;
     padding: 0 3%;
-    flex-grow: 1;
-    padding: auto;
     display: flex;
     align-items: center;
 }
 .main-div-child1-child2 > div:hover{
     background-color: rgb(81, 119, 243);
+    color: white;
 }
 
 .main-div-child2{
@@ -62,6 +61,13 @@ body{
     z-index: 9999999;
     display: none;
 }
+.headings_in_site{
+    font-size: 3rem;
+}
+
+h4{
+    padding: 0.3rem 0;
+}
 
 @media(max-width: 760px){
     .main-div-child1{
@@ -76,5 +82,9 @@ body{
     }
     .hamburger-button{
         display: block;
+    }
+    
+    .headings_in_site{
+        font-size: 2rem;
     }
 }
